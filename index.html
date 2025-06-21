@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="./assets/icon.ico"></link>
+    <title>ETBSaveManager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <img src="./assets/icon.ico" alt="icon" class="logo-icon">
+                ETBSaveManager
+            </a>
+            <div class="nav-links">
+                <a href="#features">功能</a>
+                <a href="#downloads">下载</a>
+                <a href="#about">项目</a>
+                <a href="#">文档</a>
+            </div>
+            <a href="#downloads"><button class="cta-button">下载 v2.7.2</button></a>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>专业的《Escape The Backrooms》存档管理工具</h1>
+                <p>ETBSaveManager 提供强大的存档管理功能，支持创建、编辑、删除和刷新存档，适用于 Windows、macOS 和 Linux 平台。</p>
+                <div class="hero-buttons">
+                    <a href="#downloads"><button class="cta-button">立即下载</button></a>
+                    <a href="https://www.bilibili.com/video/BV1L3yeYzEfi"><button class="cta-button" style="background: transparent; border: 1px solid var(--glass-border);">查看演示</button></a>
+                </div>
+            </div>
+            <div class="hero-model">
+                <div class="hero-model-inner">
+                    <div class="app-ui"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特点 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">核心功能</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>创建存档</h3>
+                    <p>轻松创建新的游戏存档，支持自定义存档名称和描述，满足不同游戏进度的需求。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>编辑存档</h3>
+                    <p>灵活编辑现有存档内容，修改游戏状态、进度和关键参数，无需手动修改文件。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                    <h3>删除存档</h3>
+                    <p>安全删除不需要的存档，释放存储空间，保持存档库整洁有序。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>刷新存档</h3>
+                    <p>一键刷新存档列表，实时获取最新存档状态，确保信息准确无误。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <h3>隐藏存档</h3>
+                    <p>保护重要存档不被意外修改，隐藏功能让您的关键存档更加安全。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>多分支支持</h3>
+                    <p>同时管理开发分支和主分支，满足开发者与普通用户的不同需求。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 -->
+    <section class="downloads" id="downloads">
+        <div class="container">
+            <h2 class="section-title">下载应用</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: var(--gray);">
+                ETBSaveManager 支持多平台使用，选择适合您操作系统的版本进行下载
+            </p>
+            
+            <div class="download-grid">
+                <div class="download-card windows">
+                    <i class="fab fa-windows os-icon"></i>
+                    <h3>Windows</h3>
+                    <div class="version-info">最新版本：v2.7.2</div>
+                    <p>支持 Windows 10 及以上版本</p>
+                    <a href="https://gitee.com/llzgd/ETBSaveManager"><button class="cta-button" style="margin-top: 20px;" >下载 .exe</button></a>
+                </div>
+                
+                <div class="download-card macos">
+                    <i class="fab fa-apple os-icon"></i>
+                    <h3>macOS</h3>
+                    <div class="version-info">最旧版本：v不知道</div>
+                    <p>不支持 macOS Big Sur 及以上版本</p>
+                    <button class="cta-button" style="margin-top: 20px;">不要下载 .dmg</button>
+                </div>
+                
+                <div class="download-card linux">
+                    <i class="fab fa-linux os-icon"></i>
+                    <h3>Linux</h3>
+                    <div class="version-info">最旧版本：v不知道</div>
+                    <p>不支持 Ubuntu, Fedora 等主流发行版</p>
+                    <button class="cta-button" style="margin-top: 20px;">不要下载 .deb</button>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 40px; color: var(--gray);">
+                <i class="fas fa-info-circle"></i> 开发分支版本仅限开发者或测试者使用，尚未正式发布安装包
+            </p>
+        </div>
+    </section>
+
+    <!-- 关于项目 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">项目信息</h2>
+            
+            <div class="branches">
+                <div class="branch-card">
+                    <h3><i class="fas fa-code"></i> 开发分支 (development)</h3>
+                    <p>当前开发分支专注于版本3的新特性开发，采用现代技术栈构建。</p>
+                    
+                    <ul>
+                        <li><i class="fas fa-check"></i> 前端技术：Vue.js + JavaScript + CSS</li>
+                        <li><i class="fas fa-check"></i> 开发框架：Vite + Tauri + Rust</li>
+                        <li><i class="fas fa-check"></i> 特性：存档版本控制、云同步支持</li>
+                        <li><i class="fas fa-check"></i> 状态：仅限开发者/测试者使用</li>
+                        <li><i class="fas fa-check"></i> 最近更新：README 和 .gitignore 优化</li>
+                    </ul>
+
+                    <div class="license">
+                        <h4><i class="fas fa-balance-scale"></i> MIT 许可证</h4>
+                        <p>本项目采用 MIT 开源协议，欢迎贡献代码和改进建议。</p>
+                    </div>
+                </div>
+                
+                <div class="branch-card">
+                    <h3><i class="fas fa-flag"></i> 主分支 (master)</h3>
+                    <p>稳定版本分支，适合所有用户使用，当前最新版本为 v2.7.2。</p>
+                    
+                    <ul>
+                        <li><i class="fas fa-check"></i> 最新版本：v2.7.2（2025年2月8日）</li>
+                        <li><i class="fas fa-check"></i> 历史版本：v2.0.0 - v2.7.1</li>
+                        <li><i class="fas fa-check"></i> 核心功能：新建、删除、编辑、隐藏、刷新存档</li>
+                        <li><i class="fas fa-check"></i> 视频指南：Bilibili 使用教程</li>
+                        <li><i class="fas fa-check"></i> 社区支持：GitHub Issues 和 PR</li>
+                    </ul>
+                    
+                    <div class="license">
+                        <h4><i class="fas fa-balance-scale"></i> MIT 许可证</h4>
+                        <p>本项目采用 MIT 开源协议，欢迎贡献代码和改进建议。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-database"></i> ETBSaveManager
+                    </div>
+                    <p>专业的《Escape The Backrooms》存档管理工具</p>
+                    <div class="social-links">
+                        <a href="https://github.com/llzgdc"><i class="fab fa-github"></i></a>
+                        <a href="https://space.bilibili.com/2019959464"><i class="fab fa-bilibili"></i></a>
+                        <!-- <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>资源</h3>
+                    <a href="#">文档</a>
+                    <a href="#">教程</a>
+                    <a href="#">API</a>
+                    <a href="#">社区</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>支持</h3>
+                    <a href="#">帮助中心</a>
+                    <a href="#">问题反馈</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">贡献指南</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>法律</h3>
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                    <a href="#">许可证</a>
+                    <a href="#">版权声明</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 ETBSaveManager 项目组。保留所有权利。Escape The Backrooms 是相应版权所有者的商标。
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="./disableShortcuts.js"></script>
+</body>
+</html>

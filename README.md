@@ -1,24 +1,2 @@
-# etbsavex
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# ETBSaveX
+Extensions, website files, and supplementary packages for ETBSaveManager. A collection of tools and resources to enhance and customize the main application.
