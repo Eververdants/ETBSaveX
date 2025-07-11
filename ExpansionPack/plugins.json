@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    {
+      "id": "plugin-example",
+      "name": "example",
+      "version": "1.0.0",
+      "description": "example",
+      "author": "example",
+      "license": "example"
+    }
+  ]
+}
