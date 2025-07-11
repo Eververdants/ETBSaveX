@@ -2,11 +2,11 @@
   "plugins": [
     {
       "id": "plugin-example",
-      "name": "example",
+      "name": "测试",
       "version": "1.0.0",
-      "description": "example",
-      "author": "example",
-      "license": "example",
+      "description": "此项插件仅供测试使用。",
+      "author": "llzgdc",
+      "license": "MIT",
       "download_url": "example"
     }
   ]
